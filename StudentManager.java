@@ -73,7 +73,8 @@ public class StudentManager {
 		for (int i=0;i <size ;i++) {
 			if(students[i].getName().toLowerCase()
 					.contains(name.trim().toLowerCase())) {
-				
+				result[count] = students[i];
+            	count++;
 			}
 		}
 		return Arrays.copyOf(result, count);
